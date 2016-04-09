@@ -1,0 +1,17 @@
+This is a demo program for the Dawn Robotics Rover 5 Seeeduino/Arduino Robot Kit.
+
+The program gives the robot a simple wall following behaviour. Whenever the robot finds what it thinks is a wall it turns to the left and attempts to follow it, keeping the wall to its right.
+
+By modifying some of the constants in rover_5_wall_follower.ino you can change the behaviour of the program. Probably the most important ones to modify are the constants called LOOK_FORWARD_PAN/TILT_ANGLE and LOOK_RIGHT_PAN/TILT_ANGLE, these position the Pan/Tilt head of the robot and may need to be modified slightly so that the robot looks directly forward, and directly to its right correctly.
+
+This code may be modified and used as you like for any purpose. The only slight exception to this is the Encoder library which is made up of the files
+
+Encoder.h
+Encoder.cpp
+utility_direct_pin_read.h
+utility_interrupt_config.h
+utility_interrupt_pins.h
+
+The Encoder library was written by Paul Stoffregen of PJRC.COM, this again can be used pretty much without restriction, but the copyright notice and licence in Encoder.h must be included with any copies or modifications.
+
+If you have any problems getting the program to run then please ask a question in the Dawn Robotics support forums at forum.dawnrobotics.co.uk
